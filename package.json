@@ -1,0 +1,24 @@
+{
+  "name": "part5-01-NodeJS_base_core_net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongyuekai/part5-01_NodeJs_base_core_net.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongyuekai/part5-01_NodeJs_base_core_net/issues"
+  },
+  "homepage": "https://github.com/dongyuekai/part5-01_NodeJs_base_core_net#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "marked": "^2.0.3"
+  }
+}
