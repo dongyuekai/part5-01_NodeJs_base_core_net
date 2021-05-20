@@ -8,10 +8,10 @@
       "type": "node",
       "request": "launch",
       "name": "启动程序",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/04FS/09-custom-rmdir.js"
+      // "skipFiles": [
+      //   "<node_internals>/**"
+      // ],
+      "program": "${workspaceFolder}/05Module/02-require-load.js"
     }
   ]
 }
