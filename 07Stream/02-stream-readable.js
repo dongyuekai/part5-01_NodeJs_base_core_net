@@ -1,4 +1,5 @@
-// stream 之 可读流
+// stream 之 模拟 可读流
+
 const { Readable } = require('stream')
 
 // 自定义类继承 Readable
