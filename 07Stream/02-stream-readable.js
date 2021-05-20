@@ -7,6 +7,7 @@ class MyReadable extends Readable {
     super()
     this.source = source
   }
+  // 重写_read方法
   _read() {
     let data = this.source.shift() || null
     this.push(data)
