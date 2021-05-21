@@ -1,5 +1,7 @@
 // 文件可读流和消费
 const fs = require('fs')
+const path = require('path')
+
 let rs = fs.createReadStream('test.txt', {
   flags: 'r',
   encoding: null,
@@ -28,5 +30,22 @@ rs.on('readable', () => {
     console.log('-----', rs._readableState.length)
   }
 })
-
+rs.on('open', fd => {
+  console.log(fd, '文件打开了')
+})
+rs.on('close', () => {
+  console.log('文件关闭了')
+})
+let bufferArr = []
+rs.on('data', chunk => {
+  // console.log(chunk)
+  bufferArr.push(chunk)
+})
+rs.on('end', () => {
+  console.log(Buffer.concat(bufferArr).toString())
+  console.log('当数据被清空之后')
+})
+rs.on('error', err => {
+  console.log('出错了')
+})
 
